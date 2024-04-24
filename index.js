@@ -2,10 +2,13 @@ const express = require('express');
 const app = express();
 const port = 3000;
 
-app.get('/', (req, res) => {
-    res.send('Hello, world!');
+// Route that returns the name of someone you know
+app.get('/name', (req, res) => {
+    const name = 'Farah Stumpf';
+    res.send(name);
 });
 
+// Start the server and log a message to the console
 app.listen(port, () => {
     console.log(`Server is listening at http://localhost:${port}`);
 });
