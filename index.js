@@ -10,4 +10,4 @@ app.listen(port, () => {
     console.log(`Server is listening at http://localhost:${port}`);
 });
 
-//ChatGPT provided me with this code. 
+//ChatGPT provided me with this code.
